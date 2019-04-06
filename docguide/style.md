@@ -57,7 +57,7 @@ Contents:
 1.  [行尾空格](#行尾空格)
 1.  [标题](#标题)
     1.  [ATX 风格的标题](#ATX-风格的标题)
-    1.  [标题内插入空格](#标题内插入空格)
+    1.  [在标题内插入空格](#在标题内插入空格)
 1.  [列表](#列表)
     1.  [对长列表使用懒惰编号](#对长列表使用懒惰编号)
     1.  [嵌套列表的缩进](#嵌套列表的缩进)
@@ -111,15 +111,15 @@ Content.
     if you are very proud of it, add yourself under the title. However,
     revision history generally suffices.
 -->
-1.  `author`：*可选*。如果你想要声明文档的所有权，或者你对它非常自豪，那把你自己添加到标题下。然而，修订历史通常就足够了。
-
+1.  `author`：*可选*。如果你想要声明文档的所有权，或者你对你的文章感到非常自豪，那就把你自己的名字添加到标题下。然而，修订历史通常就足够了。
+high-level overview 
 <!--
-1.  `Short introduction.` 1-3 sentences providing a high-level overview of the
+1.  `Short introduction.` 1-3 sentences providing a of the
     topic. Imagine yourself as a complete newbie, who landed on your "Extending
     Foo" doc and needs to know the most basic assumptions you take for granted.
     "What is Foo? Why would I extend it?"
 -->
-1.  `Short introduction.`：用 1-3 句话给出主题的高度概述。把自己想象成一个完全的新手，刚刚接触到你的“Foo 扩展” 文档，需要知道一些你认为理所当然的最基本假设。如，“什么是 Foo？为什么我需要扩展它？”
+1.  `Short introduction.`：用 1-3 句话高度概括的你文章主题。把自己想象成一个第一次接触到你的“Foo 扩展” 的文档的新手，需要知道一些你认为理所当然的基本前提。如，“什么是 Foo？为什么我需要它的拓展？”
 
 <!--
 1.  `[TOC]`: if you use hosting that supports table of contents, such as Gitiles,
@@ -131,13 +131,13 @@ Content.
 <!--
 1.  `## Topic`: The rest of your headings should start from level 2.
 -->
-1.  `## Topic`：其余标题应该从二级标题开始。
+1.  `## Topic`：其他的标题应该从二级标题开始。
 
 <!--
 1.  `## See also`: Put miscellaneous links at the bottom for the user who wants
     to know more or didn't find what she needed.
 -->
-1.  `## See also`：把参考链接放在底部，供想要了解更多或者未找到所需内容的用户使用。
+1.  `## See also`：把参考链接放在最后，给那些想要了解更多或者未找到所需内容的用户使用。
 
 <!--
 ## Character line limit
@@ -149,7 +149,7 @@ Obey projects' character line limit wherever possible. Long URLs and tables are
 the usual suspects when breaking the rule. (Headings also can't be wrapped, but
 we encourage keeping them short). Otherwise, wrap your text:
 -->
-尽可能遵守项目的行内字符数限制。当违背规则时，通常会怀疑长链接和表格。（标题无法换行，所以我们鼓励保持短标题）此外，给你的文本分行：
+尽可能遵守项目的行内字符数限制。长链接和表格通常会违反这个规则。（标题无法换行，所以我们鼓励保持短标题）此外，给你的文本分行：
 
 ```markdown
 Lorem ipsum dolor sit amet, nec eius volumus patrioque cu, nec et commodo
@@ -193,7 +193,7 @@ will clean it up anyway.
 Best practice is to avoid the need for a `<br />` altogether. Markdown creates
 paragraph tags for you simply with newlines: get used to that.
 -->
-最好的做法是完全避免使用 `<br />`。Markdown 使用新的空行来标记段落：习惯这一点。
+最好的做法是完全避免使用 `<br />`。需要习惯在 Markdown 中使用空白行来标记段落。
 
 <!--
 ## Headings
@@ -224,12 +224,12 @@ Heading - do you remember what level? DO NOT DO THIS.
 <!--
 ### Add spacing to headings
 -->
-### 标题内插入空格
+### 在标题内插入空格
 
 <!--
 Prefer spacing after `#` and newlines before and after:
 -->
-在 `#` 符号后面插入空格并在标题后插入空行会更好：
+推荐在 `#` 符号后面插入空格并在标题后插入空行：
 
 ```markdown
 ...text before.
@@ -242,7 +242,7 @@ Text after...
 <!--
 Lack of spacing makes it a little harder to read in source:
 -->
-缺乏间距使得源代码难以阅读：
+缺乏空行使得源代码难以阅读：
 
 ```markdown
 ...text before.
@@ -314,7 +314,7 @@ When nesting lists, use a 4 space indent for both numbered and bulleted lists:
 <!--
 The following works, but it's very messy:
 -->
-下面的代码是可用的，但是它非常混乱：
+下面的代码是可用的，但是非常混乱：
 
 ```markdown
 * One space,
@@ -378,7 +378,7 @@ Pay attention to the `foo_bar_whammy` field in that table.
 Use inline code when referring to file types in an abstract sense, rather than a
 specific file:
 -->
-当引用抽象意义上的文件类型而不是特定文件时使用内联代码：
+当引用抽象意义上的文件类型而不是引用特定文件时，应该使用内联代码：
 
 ```markdown
 Be sure to update your `README.md`!
@@ -399,7 +399,7 @@ anyway.
 <!--
 For code quotations longer than a single line, use a codeblock:
 -->
-对于引用的多于一行的代码，请使用代码块：
+对于引用的超过一行的代码，请使用代码块：
 
 <pre>
 ```python
@@ -417,7 +417,7 @@ def Foo(self, bar):
 It is best practice to explicitly declare the language, so that neither the
 syntax highlighter nor the next editor must guess.
 -->
-最好做法是明确声明语言，以便语法高亮显示器和编辑器都不必猜测。
+最好做法是明确声明代码语言，以便语法高亮插件和下一位作者都不用去猜测这是什么语言。
 
 <!--
 #### Indented codeblocks are sometimes cleaner
@@ -455,7 +455,7 @@ Because most commandline snippets are intended to be copied and pasted directly
 into a terminal, it's best practice to escape any newlines. Use a single
 backslash at the end of the line:
 -->
-因为大多数命令行片段都会被复杂并直接粘贴到终端中，因此最好避免使用任何换行符。在行尾使用一个反斜杠：
+因为大多数命令行片段都会被复制并直接粘贴到终端中，因此最好避免使用任何换行符。在行尾使用一个反斜杠：
 
 <pre>
 ```shell
@@ -473,7 +473,7 @@ bazel run :target -- --flag --foo=longlonglonglonglongvalue \
 If you need a codeblock within a list, make sure to indent it so as to not break
 the list:
 -->
-如果你需要在列表中放置一个代码块，请保证缩进它，以免破坏列表：
+在列表中放置一个代码块时，请保证代码块缩进，以免破坏列表统一的格式：
 
 ```markdown
 *   Bullet.
@@ -586,7 +586,7 @@ DO NOT DO THIS
 [Lists](#lists) and subheadings usually suffice to present the same information
 in a slightly less compact, though much more edit-friendly way:
 -->
-[列表](#列表) 和子标题通常足以以不那么紧凑的方式展示同样的内容，但更便于编辑：
+[列表](#列表) 和子标题能以不那么紧凑的方式展示同样的内容，而且便于编辑：
 
 ```markdown
 ## Fruits
