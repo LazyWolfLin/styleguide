@@ -112,9 +112,9 @@ Content.
     revision history generally suffices.
 -->
 1.  `author`：*可选*。如果你想要声明文档的所有权，或者你对你的文章感到非常自豪，那就把你自己的名字添加到标题下。然而，修订历史通常就足够了。
-high-level overview 
+
 <!--
-1.  `Short introduction.` 1-3 sentences providing a of the
+1.  `Short introduction.` 1-3 sentences providing a high-level overview of the
     topic. Imagine yourself as a complete newbie, who landed on your "Extending
     Foo" doc and needs to know the most basic assumptions you take for granted.
     "What is Foo? Why would I extend it?"
