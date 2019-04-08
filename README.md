@@ -4,17 +4,21 @@
 
 ## How To Contribution
 
-Fork 本项目 [google-styleguide-zh][zh] 到自己的代码仓库中。将英文内容注释掉后，在新一行添加中文翻译内容。例如：
+Fork 本项目 [google-styleguide-zh][zh] 到自己的代码仓库中。将英文内容注释掉后，在新一行添加中文翻译内容。为方便同步上游项目，请在英文内容前后另起新行进行注释，例如：
 
 HTML
 ``` HTML
-<!-- <p>english content</p> -->
+<!--
+<p>english content</p>
+-->
 <p>中文翻译</p>
 ```
 
 MarkDown
 ``` MarkDown
-<!-- english content -->
+<!--
+english content
+-->
 中文翻译
 ```
 
